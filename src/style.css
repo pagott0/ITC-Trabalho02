@@ -89,12 +89,38 @@ body {
   left: 0;
   right: 0;
   text-align: left;
-  
-  
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
 }
 .navbar h1{
   margin-left: 35px;
   color: #ececf1;
+}
+.navItens {
+  color: #ececf1;
+  margin-right: 35px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: medium;  
+  transition: all 0.2s ease-in-out;
+}
+  .navItens:hover {
+    font-size: large;
+  }
+
+/* TODO: Responsivo */
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Defina a altura desejada, por exemplo, 60% da altura da viewport */
+    margin-top: 100px;
+}
+
+.iframe {
+    width: 60%; /* Defina a largura desejada, por exemplo, 60% da largura da viewport */
+    height: 100%; /* Para ocupar a altura completa do contêiner */
 }
 
 .right {
