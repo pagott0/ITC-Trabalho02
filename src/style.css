@@ -109,6 +109,12 @@ body {
     font-size: large;
   }
 
+  .navbar img {
+    width: 60px;
+    height: auto;
+    margin-top: 5px;
+  }
+
 /* TODO: Responsivo */
 .iframe-container {
     display: flex;
