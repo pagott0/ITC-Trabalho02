@@ -115,19 +115,24 @@ body {
     margin-top: 5px;
   }
 
-/* TODO: Responsivo */
 .iframe-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh; /* Defina a altura desejada, por exemplo, 60% da altura da viewport */
-    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-
-.iframe {
-    width: 60%; /* Defina a largura desejada, por exemplo, 60% da largura da viewport */
-    height: 100%; /* Para ocupar a altura completa do contêiner */
+  
+.iframe-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Defina o tamanho desejado para o iframe */
+    height: 60%; /* Defina o tamanho desejado para o iframe */
+    border: 0;
 }
+  
 
 .right {
   left: 450px;
