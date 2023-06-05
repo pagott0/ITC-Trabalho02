@@ -54,6 +54,7 @@ body {
   background: #3e3f4b;
   border-radius: 5px;
   color: #ececf1;
+  text-align: justify;
 }
 
 .timeline-item .content h2 {
