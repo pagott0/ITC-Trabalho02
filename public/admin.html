@@ -2,56 +2,6 @@
 <html>
 <head>
   <title>Admin Panel</title>
-  <script>
-    let email = "";
-    while (email !== "bruno.gvolpe@icloud.com") {
-      email = window.prompt("Email:");
-      if (email === null || email === "") {
-        continue; // Exibe o prompt novamente se o usuário clicar em "Cancelar" ou se o valor for vazio
-      }
-    }
-    window.alert("Welcome!");
-  </script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    .form-container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-    }
-
-    .form-container input[type="text"],
-    .form-container button {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-
-    .form-container button {
-      background-color: #4CAF50;
-      color: white;
-      cursor: pointer;
-    }
-
-    .form-container button:hover {
-      background-color: #45a049;
-    }
-  </style>
 </head>
 <body>
   <h1>Admin Panel</h1>
@@ -66,20 +16,6 @@
     </form>
   </div>
 
-  <script>
-    function createPost() {
-      // Retrieve values from input fields
-      var text = document.getElementById("text").value;
-      var eventName = document.getElementById("eventName").value;
-      var eventYear = document.getElementById("eventYear").value;
-
-      // Perform the necessary actions, e.g., send data to a server
-
-      // Reset the input fields after creating the post
-      document.getElementById("text").value = "";
-      document.getElementById("eventName").value = "";
-      document.getElementById("eventYear").value = "";
-    }
-  </script>
+  <script src="./assets/js/bundle1.js"></script>
 </body>
 </html>
