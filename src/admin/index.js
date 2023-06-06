@@ -50,7 +50,7 @@ const loadPage = () => {
         e.preventDefault();
         const text = document.querySelector("#text").value;
         const eventName = document.querySelector("#eventName").value;
-        const eventYear = document.querySelector("#eventYear").value;
+        const eventYear = parseInt(document.querySelector("#eventYear").value);
 
         try {
             await addDoc(collection(db, "posts"), {
