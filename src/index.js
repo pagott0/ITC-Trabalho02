@@ -3,7 +3,6 @@ import './style.css'
 import db from './utils/firebaseConnection.js'
 import { collection, query, orderBy, onSnapshot, addDoc } from "firebase/firestore"
 
-import './auth/index.js'
 let toggle = false;
 /* Call this function to add events, first parameter: text, second parameter: 
 event name, third parameted: year */
