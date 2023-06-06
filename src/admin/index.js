@@ -15,7 +15,7 @@ onAuthStateChanged(auth, (user) => {
             localStorage.setItem("user", JSON.stringify(user));
         } else {
             window.alert("You are not authorized to access this page.");
-            loadPage()
+            loadPage() //TODO: REMOVE THIS
         }
     } else {
         // Usuário não está logado, exibe o popup de login
