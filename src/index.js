@@ -1,4 +1,6 @@
 import './style.css'
+import 'bootstrap';
+
 
 import db from './utils/firebaseConnection.js'
 import { collection, query, orderBy, onSnapshot, addDoc } from "firebase/firestore"
