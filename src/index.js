@@ -37,7 +37,6 @@ const getBoxes = async () => {
             })
         }, [])
     } catch (err) {
-        //TODO: exibir msg de erro
         console.log(err)
     }
 }

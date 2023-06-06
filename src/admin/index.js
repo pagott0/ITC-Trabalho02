@@ -1,7 +1,7 @@
 import './admin.css';
 
 import { onAuthStateChanged, signInWithPopup } from "firebase/auth";
-import { addDoc, collection } from "firebase/firestore";
+import { collection, query, where, onSnapshot, addDoc, updateDoc, deleteDoc, getDocs } from "firebase/firestore"
 
 import { auth, provider } from '../utils/firebaseConnection.js';
 import db from '../utils/firebaseConnection.js';
@@ -40,9 +40,15 @@ onAuthStateChanged(auth, (user) => {
 const loadPage = () => {
     document.querySelector("body").style.display = "block";
     const storeButton = document.querySelector("#storeButton");
+    const findButton = document.querySelector("#findButton");
+    const deleteButton = document.querySelector("#deleteButton");
+    const updateButton = document.querySelector("#updateButton");
 
     //Events listenners
     storeButton.addEventListener('click', (e) => storeBox(e))
+    findButton.addEventListener('click', (e) => findBox(e))
+    deleteButton.addEventListener('click', (e) => deleteBox(e))
+    updateButton.addEventListener('click', (e) => updateBox(e))
 
     /* is called when the admin clicks the add button function */
     // TODO: add snapshot
@@ -61,6 +67,94 @@ const loadPage = () => {
             window.alert('Evento adicionado com sucesso!')
         } catch (err) {
             window.alert("Erro ao adicionar evento, tente novamente mais tarde");
+        }
+    };
+
+    const findBox = async (e) => {
+        e.preventDefault();
+        const search = document.querySelector("#search").value;
+
+        try {
+            const q = query(
+                collection(db, 'posts'),
+                where('eventName', '==', search)
+            );
+
+            const querySnapshot = await getDocs(q);
+
+            if (querySnapshot.empty) {
+                window.alert("Evento não encontrado");
+                return;
+            }
+
+            querySnapshot.forEach((doc) => {
+                const { text, eventName, eventYear } = doc.data();
+                document.querySelector("#textUpdate").value = text;
+                document.querySelector("#eventNameUpdate").value = eventName;
+                document.querySelector("#eventYearUpdate").value = eventYear;
+            });
+        } catch (err) {
+            window.alert("Erro ao encontrar evento, tente novamente mais tarde");
+        }
+    };
+
+    const deleteBox = async (e) => {
+        e.preventDefault();
+        const search = document.querySelector("#search").value;
+
+        try {
+            const q = query(
+                collection(db, 'posts'),
+                where('eventName', '==', search),
+            );
+
+            const querySnapshot = await getDocs(q);
+            if (querySnapshot.empty) {
+                window.alert("Nenhum evento encontrado com o nome pesquisado.");
+                return;
+            }
+
+            querySnapshot.forEach((doc) => {
+                deleteDoc(doc.ref);
+            });
+
+            window.alert('Evento deletado com sucesso!');
+        } catch (err) {
+            window.alert("Erro ao deletar evento, tente novamente mais tarde");
+        }
+    }
+
+    const updateBox = async (e) => {
+        e.preventDefault();
+        const textUpdate = document.querySelector("#textUpdate").value;
+        const eventNameUpdate = document.querySelector("#eventNameUpdate").value;
+        const eventYearUpdate = parseInt(document.querySelector("#eventYearUpdate").value);
+        const search = document.querySelector("#search").value;
+
+        try {
+            const q = query(
+                collection(db, 'posts'),
+                where('eventName', '==', search)
+            );
+
+            const querySnapshot = await getDocs(q);
+
+            if (querySnapshot.empty) {
+                window.alert("Evento não encontrado");
+                return;
+            }
+
+            querySnapshot.forEach((doc) => {
+                updateDoc(doc.ref, {
+                    text: textUpdate,
+                    eventName: eventNameUpdate,
+                    eventYear: eventYearUpdate
+                });
+            });
+
+            window.alert('Evento atualizado com sucesso!');
+        } catch (err) {
+            window.alert("Erro ao atualizar evento, tente novamente mais tarde");
         }
     };
 }

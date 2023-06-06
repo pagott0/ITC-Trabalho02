@@ -45,3 +45,7 @@ h1 {
     padding: 10px;
   }
 }
+
+#deleteButton {
+  background-color: #f44336;
+}
