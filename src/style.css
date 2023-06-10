@@ -114,6 +114,8 @@ body {
 }
   .navItens:hover {
     font-size: large;
+    text-decoration: none;
+    color: #ececf1;
   }
 
   .navbar img {
