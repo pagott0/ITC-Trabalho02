@@ -34075,57 +34075,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  display: none;
-}
-
-h1 {
-  text-align: center;
-}
-
-.form-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-.form-container input[type="text"],
-.form-container button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.form-container button {
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-}
-
-.form-container button:hover {
-  background-color: #45a049;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .form-container {
-    max-width: 300px;
-    padding: 10px;
-  }
-}
-
-#deleteButton {
-  background-color: #f44336;
-}`, "",{"version":3,"sources":["webpack://./src/admin/admin.css"],"names":[],"mappings":"AAAA;EACE,8BAA8B;EAC9B,SAAS;EACT,aAAa;EACb,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;EAChB,cAAc;EACd,aAAa;EACb,sBAAsB;EACtB,kBAAkB;EAClB,yBAAyB;AAC3B;;AAEA;;EAEE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,sBAAsB;EACtB,kBAAkB;EAClB,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA,2BAA2B;AAC3B;EACE;IACE,gBAAgB;IAChB,aAAa;EACf;AACF;;AAEA;EACE,yBAAyB;AAC3B","sourcesContent":["body {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 20px;\n  display: none;\n}\n\nh1 {\n  text-align: center;\n}\n\n.form-container {\n  max-width: 400px;\n  margin: 0 auto;\n  padding: 20px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background-color: #f9f9f9;\n}\n\n.form-container input[type=\"text\"],\n.form-container button {\n  width: 100%;\n  padding: 10px;\n  margin-bottom: 10px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  box-sizing: border-box;\n}\n\n.form-container button {\n  background-color: #4CAF50;\n  color: white;\n  cursor: pointer;\n}\n\n.form-container button:hover {\n  background-color: #45a049;\n}\n\n/* Responsive adjustments */\n@media (max-width: 600px) {\n  .form-container {\n    max-width: 300px;\n    padding: 10px;\n  }\n}\n\n#deleteButton {\n  background-color: #f44336;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 20px;\n  display: none;\n}\n\nh1 {\n  text-align: center;\n}\n\n.form-container {\n  max-width: 400px;\n  margin: 0 auto;\n  padding: 20px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background-color: #f9f9f9;\n}\n\n.form-container input[type=\"text\"],\n.form-container button {\n  width: 100%;\n  padding: 10px;\n  margin-bottom: 10px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  box-sizing: border-box;\n}\n\n.form-container button {\n  background-color: #4CAF50;\n  color: white;\n  cursor: pointer;\n}\n\n.form-container button:hover {\n  background-color: #45a049;\n}\n\n/* Responsive adjustments */\n@media (max-width: 600px) {\n  .form-container {\n    max-width: 300px;\n    padding: 10px;\n  }\n}\n\n#deleteButton {\n  background-color: #f44336;\n}", "",{"version":3,"sources":["webpack://./src/admin/admin.css"],"names":[],"mappings":"AAAA;EACE,8BAA8B;EAC9B,SAAS;EACT,aAAa;EACb,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;EAChB,cAAc;EACd,aAAa;EACb,sBAAsB;EACtB,kBAAkB;EAClB,yBAAyB;AAC3B;;AAEA;;EAEE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,sBAAsB;EACtB,kBAAkB;EAClB,sBAAsB;AACxB;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA,2BAA2B;AAC3B;EACE;IACE,gBAAgB;IAChB,aAAa;EACf;AACF;;AAEA;EACE,yBAAyB;AAC3B","sourcesContent":["body {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 20px;\n  display: none;\n}\n\nh1 {\n  text-align: center;\n}\n\n.form-container {\n  max-width: 400px;\n  margin: 0 auto;\n  padding: 20px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background-color: #f9f9f9;\n}\n\n.form-container input[type=\"text\"],\n.form-container button {\n  width: 100%;\n  padding: 10px;\n  margin-bottom: 10px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  box-sizing: border-box;\n}\n\n.form-container button {\n  background-color: #4CAF50;\n  color: white;\n  cursor: pointer;\n}\n\n.form-container button:hover {\n  background-color: #45a049;\n}\n\n/* Responsive adjustments */\n@media (max-width: 600px) {\n  .form-container {\n    max-width: 300px;\n    padding: 10px;\n  }\n}\n\n#deleteButton {\n  background-color: #f44336;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -1,6 +1,7 @@
 import './style.css'
 import 'bootstrap';
 
+import video from '../src/assets/welcome.mp4';
 
 import db from './utils/firebaseConnection.js'
 import { collection, query, orderBy, onSnapshot, addDoc } from "firebase/firestore"
@@ -43,6 +44,31 @@ const getBoxes = async () => {
     }
 }
 
+const handleVideo = () => {
+    const button = document.querySelector('.js-animated-button');
+
+    button.addEventListener('click', () => {
+        const modalContainer = document.getElementById('modalContainer');
+
+        const html = `
+        <div id="modalContainer" class="d-flex align-items-center justify-content-center">
+        <div class="video-container">
+            <video id="myVideo" src="${video}" controls></video>
+            <button class="close-button btn btn-light">Close</button>
+        </div>
+        </div>   
+        `;
+
+        modalContainer.innerHTML = html;
+        modalContainer.classList.add('show');
+
+        const closeButton = modalContainer.querySelector('.close-button');
+        closeButton.addEventListener('click', () => {
+            modalContainer.classList.remove('show');
+        });
+    });
+}
+
 const buttonListennier = () => {
     document.addEventListener('DOMContentLoaded', function () {
         const scrollToTopBtn = document.querySelector('.scroll-to-top');
@@ -75,4 +101,5 @@ const buttonListennier = () => {
 }
 
 buttonListennier()
+handleVideo()
 getBoxes()

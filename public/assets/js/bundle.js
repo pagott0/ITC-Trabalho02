@@ -41494,228 +41494,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background: #343541;
-}
-
-.timeline {
-  margin-top: 100px !important;
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.timeline-container {
-  background-color: #2021237e;
-  width: 100%;
-  margin-top: 100;
-}
-
-/*esse eh a linha*/
-.timeline:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background: #202123;
-  margin-left: -1px;
-  
-}
-
-.timeline-item {
-  position: relative;
-  padding: 40px 0;
-  clear: both;
-  
-}
-
-.timeline-item:before,
-.timeline-item:after {
-  content: '';
-  display: table;
-}
-
-.timeline-item:after {
-  clear: both;
-}
-
-/* caixa de texto */
-.timeline-item .content {
-  position: relative;
-  width: 45%;
-  padding: 20px;
-  background: #3e3f4b;
-  border-radius: 5px;
-  color: #ececf1;
-  text-align: justify;
-}
-
-.timeline-item .content h2 {
-  margin-top: 0;
-}
-
-.timeline-item .content p {
-  margin: 10px 0;
-}
-
-/* essa eh a bolinha */
-.timeline-item .timeline-icon {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  background: #202123;
-  color: #ececf1;
-}
-
-.navbar {
-  position: fixed;
-  background-color: #202123;
-  width: 100%;
-  height: auto;   
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: left;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-}
-.navbar h1{
-  margin-left: 35px;
-  color: #ececf1;
-}
-.navItens {
-  color: #ececf1;
-  margin-right: 35px;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: medium;  
-  transition: all 0.2s ease-in-out;
-}
-  .navItens:hover {
-    font-size: large;
-    text-decoration: none;
-    color: #ececf1;
-  }
-
-  .navbar img {
-    width: 60px;
-    height: auto;
-    margin-top: 5px;
-  } 
-  
-  .video-container {
-    margin-top: 100px !important;
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-.right {
-  left: 450px;
-}
-
-.curisidades {
-  margin-top: 100px;
-  background-color: #202123;
-  padding: 60px;
-  border-radius: 6px;
-}
-
-  .curisidades p, h1 {
-    color: #ececf1;
-    text-align: justify;
-  }
-
-  .curisidades h1 {
-    font-size: 24px;
-  }
-
-  .curisidades img {
-    height: 100%;
-    width: auto;
-  }
-
-  .curisidades p {
-    font-size: 12px;
-  }
-
-.curisidade {
-  margin-bottom: 100px;
-}
-
-.part2 {
-  flex-direction: row-reverse;
-}
-
-.made {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ececf1;
-}
-
-.img-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.gpt {
-  width: 50px !important;
-  height: auto;
-}
-
-.logos {
-  width: 100px;
-  margin-left: 30px;
-  height: auto;
-}
-
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: rgba(128, 128, 128, 0.5);
-  border: 0;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-  .scroll-to-top:hover {
-    background-color: rgba(128, 128, 128, 0.5);
-    border: 0;
-  }`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;AACxB;;AAEA;EACE,8BAA8B;EAC9B,SAAS;EACT,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,4BAA4B;EAC5B,kBAAkB;EAClB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,2BAA2B;EAC3B,WAAW;EACX,eAAe;AACjB;;AAEA,kBAAkB;AAClB;EACE,WAAW;EACX,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,SAAS;EACT,UAAU;EACV,mBAAmB;EACnB,iBAAiB;;AAEnB;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,WAAW;;AAEb;;AAEA;;EAEE,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,WAAW;AACb;;AAEA,mBAAmB;AACnB;EACE,kBAAkB;EAClB,UAAU;EACV,aAAa;EACb,mBAAmB;EACnB,kBAAkB;EAClB,cAAc;EACd,mBAAmB;AACrB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,cAAc;AAChB;;AAEA,sBAAsB;AACtB;EACE,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,2BAA2B;EAC3B,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,kBAAkB;EAClB,kBAAkB;EAClB,mBAAmB;EACnB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,yBAAyB;EACzB,WAAW;EACX,YAAY;EACZ,UAAU;EACV,MAAM;EACN,OAAO;EACP,QAAQ;EACR,gBAAgB;EAChB,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;AACA;EACE,iBAAiB;EACjB,cAAc;AAChB;AACA;EACE,cAAc;EACd,kBAAkB;EAClB,qBAAqB;EACrB,eAAe;EACf,iBAAiB;EACjB,gCAAgC;AAClC;EACE;IACE,gBAAgB;IAChB,qBAAqB;IACrB,cAAc;EAChB;;EAEA;IACE,WAAW;IACX,YAAY;IACZ,eAAe;EACjB;;EAEA;IACE,4BAA4B;IAC5B,kBAAkB;IAClB,sBAAsB;IACtB,SAAS;IACT,gBAAgB;EAClB;;EAEA;IACE,kBAAkB;IAClB,MAAM;IACN,OAAO;IACP,WAAW;IACX,YAAY;IACZ,iBAAiB;EACnB;;AAEF;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,yBAAyB;EACzB,aAAa;EACb,kBAAkB;AACpB;;EAEE;IACE,cAAc;IACd,mBAAmB;EACrB;;EAEA;IACE,eAAe;EACjB;;EAEA;IACE,YAAY;IACZ,WAAW;EACb;;EAEA;IACE,eAAe;EACjB;;AAEF;EACE,oBAAoB;AACtB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,sBAAsB;EACtB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,YAAY;AACd;;AAEA;EACE,eAAe;EACf,YAAY;EACZ,WAAW;EACX,0CAA0C;EAC1C,SAAS;EACT,kBAAkB;EAClB,eAAe;AACjB;;EAEE;IACE,0CAA0C;IAC1C,SAAS;EACX","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 20px;\n  background: #343541;\n}\n\n.timeline {\n  margin-top: 100px !important;\n  position: relative;\n  max-width: 800px;\n  margin: 0 auto;\n}\n\n.timeline-container {\n  background-color: #2021237e;\n  width: 100%;\n  margin-top: 100;\n}\n\n/*esse eh a linha*/\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 50%;\n  width: 2px;\n  background: #202123;\n  margin-left: -1px;\n  \n}\n\n.timeline-item {\n  position: relative;\n  padding: 40px 0;\n  clear: both;\n  \n}\n\n.timeline-item:before,\n.timeline-item:after {\n  content: '';\n  display: table;\n}\n\n.timeline-item:after {\n  clear: both;\n}\n\n/* caixa de texto */\n.timeline-item .content {\n  position: relative;\n  width: 45%;\n  padding: 20px;\n  background: #3e3f4b;\n  border-radius: 5px;\n  color: #ececf1;\n  text-align: justify;\n}\n\n.timeline-item .content h2 {\n  margin-top: 0;\n}\n\n.timeline-item .content p {\n  margin: 10px 0;\n}\n\n/* essa eh a bolinha */\n.timeline-item .timeline-icon {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 40px;\n  height: 40px;\n  line-height: 40px;\n  text-align: center;\n  border-radius: 50%;\n  background: #202123;\n  color: #ececf1;\n}\n\n.navbar {\n  position: fixed;\n  background-color: #202123;\n  width: 100%;\n  height: auto;   \n  z-index: 1;\n  top: 0;\n  left: 0;\n  right: 0;\n  text-align: left;\n  display: flex;\n  justify-content: space-between; \n  align-items: center;\n}\n.navbar h1{\n  margin-left: 35px;\n  color: #ececf1;\n}\n.navItens {\n  color: #ececf1;\n  margin-right: 35px;\n  text-decoration: none;\n  cursor: pointer;\n  font-size: medium;  \n  transition: all 0.2s ease-in-out;\n}\n  .navItens:hover {\n    font-size: large;\n    text-decoration: none;\n    color: #ececf1;\n  }\n\n  .navbar img {\n    width: 60px;\n    height: auto;\n    margin-top: 5px;\n  } \n  \n  .video-container {\n    margin-top: 100px !important;\n    position: relative;\n    padding-bottom: 56.25%;\n    height: 0;\n    overflow: hidden;\n  }\n\n  .video-container video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n.right {\n  left: 450px;\n}\n\n.curisidades {\n  margin-top: 100px;\n  background-color: #202123;\n  padding: 60px;\n  border-radius: 6px;\n}\n\n  .curisidades p, h1 {\n    color: #ececf1;\n    text-align: justify;\n  }\n\n  .curisidades h1 {\n    font-size: 24px;\n  }\n\n  .curisidades img {\n    height: 100%;\n    width: auto;\n  }\n\n  .curisidades p {\n    font-size: 12px;\n  }\n\n.curisidade {\n  margin-bottom: 100px;\n}\n\n.part2 {\n  flex-direction: row-reverse;\n}\n\n.made {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  color: #ececf1;\n}\n\n.img-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n}\n\n.gpt {\n  width: 50px !important;\n  height: auto;\n}\n\n.logos {\n  width: 100px;\n  margin-left: 30px;\n  height: auto;\n}\n\n.scroll-to-top {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  background-color: rgba(128, 128, 128, 0.5);\n  border: 0;\n  border-radius: 6px;\n  cursor: pointer;\n}\n\n  .scroll-to-top:hover {\n    background-color: rgba(128, 128, 128, 0.5);\n    border: 0;\n  }"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 20px;\n  background: #343541;\n}\n\n.timeline {\n  margin-top: 100px !important;\n  position: relative;\n  max-width: 800px;\n  margin: 0 auto;\n}\n\n.timeline-container {\n  background-color: #2021237e;\n  width: 100%;\n  margin-top: 100;\n}\n\n/*esse eh a linha*/\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 50%;\n  width: 2px;\n  background: #202123;\n  margin-left: -1px;\n  \n}\n\n.timeline-item {\n  position: relative;\n  padding: 40px 0;\n  clear: both;\n  \n}\n\n.timeline-item:before,\n.timeline-item:after {\n  content: '';\n  display: table;\n}\n\n.timeline-item:after {\n  clear: both;\n}\n\n/* caixa de texto */\n.timeline-item .content {\n  position: relative;\n  width: 45%;\n  padding: 20px;\n  background: #3e3f4b;\n  border-radius: 5px;\n  color: #ececf1;\n  text-align: justify;\n}\n\n.timeline-item .content h2 {\n  margin-top: 0;\n}\n\n.timeline-item .content p {\n  margin: 10px 0;\n}\n\n/* essa eh a bolinha */\n.timeline-item .timeline-icon {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 40px;\n  height: 40px;\n  line-height: 40px;\n  text-align: center;\n  border-radius: 50%;\n  background: #202123;\n  color: #ececf1;\n}\n\n.navbar {\n  position: fixed;\n  background-color: #202123;\n  width: 100%;\n  height: auto;   \n  z-index: 1;\n  top: 0;\n  left: 0;\n  right: 0;\n  text-align: left;\n  display: flex;\n  justify-content: space-between; \n  align-items: center;\n}\n.navbar h1{\n  margin-left: 35px;\n  color: #ececf1;\n}\n.navItens {\n  color: #ececf1;\n  margin-right: 35px;\n  text-decoration: none;\n  cursor: pointer;\n  font-size: medium;  \n  transition: all 0.2s ease-in-out;\n}\n  .navItens:hover {\n    font-size: large;\n    text-decoration: none;\n    color: #ececf1;\n  }\n\n  .navbar img {\n    width: 60px;\n    height: auto;\n    margin-top: 5px;\n  } \n\n  #modalContainer {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, 0.8);\n    display: none;\n    z-index: 9999;\n  }\n  \n  #modalContainer.show {\n    display: flex;\n  }\n  \n  .video-container {\n    position: relative;\n    max-width: 50%;\n    max-height: 50%;\n    margin: 0 auto;\n  }\n  \n  .video-container video {\n    display: block;\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n  }\n\n.right {\n  left: 450px;\n}\n\n.curisidades {\n  margin-top: 100px;\n  background-color: #202123;\n  padding: 60px;\n  border-radius: 6px;\n}\n\n  .curisidades p, h1 {\n    color: #ececf1;\n    text-align: justify;\n  }\n\n  .curisidades h1 {\n    font-size: 24px;\n  }\n\n  .curisidades img {\n    height: 100%;\n    width: auto;\n  }\n\n  .curisidades p {\n    font-size: 12px;\n  }\n\n.curisidade {\n  margin-bottom: 100px;\n}\n\n.part2 {\n  flex-direction: row-reverse;\n}\n\n.made {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  color: #ececf1;\n}\n\n.img-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n}\n\n.gpt {\n  width: 50px !important;\n  height: auto;\n}\n\n.logos {\n  width: 100px;\n  margin-left: 30px;\n  height: auto;\n}\n\n.scroll-to-top {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  background-color: rgba(128, 128, 128, 0.5);\n  border: 0;\n  border-radius: 6px;\n  cursor: pointer;\n}\n\n  .scroll-to-top:hover {\n    background-color: rgba(128, 128, 128, 0.5);\n    border: 0;\n  }\n\n.welcome {\n  margin-top: 100px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 18px;\n  color: #ececf1;\n  width: 100%;\n}\n\n  .welcome h1 {\n    font-size: 32px;\n    text-align: center;\n  }\n\n.descripton {\n  text-align: center;\n  margin-top: 30px;\n}\n\n/* CODIGO CSS DO BOTAO */\n.btn {\n  font-size: 1em;\n  line-height: 1em;\n  letter-spacing: 0.04em;\n  display: inline-block;\n}\n\n.btn--svg {\n  position: relative;\n  height: 42px;\n  width: 190px;\n  overflow: hidden;\n  border-radius: 21px;\n}\n\n.btn--svg:hover .btn--svg__circle circle {\n  -webkit-transform: scale(0);\n  -moz-transform: scale(0);\n  -ms-transform: scale(0);\n  transform: scale(0);\n}\n\n.btn--svg:hover .btn--svg__label {\n  color: #fff;\n}\n\n.btn--svg:hover .btn--svg__border--left path,\n.btn--svg:hover .btn--svg__border--right path {\n  stroke-dasharray: 61.8204345703125 61.8204345703125;\n  stroke-dashoffset: 0;\n  -webkit-transition-delay: 0.25s;\n  -webkit-transition-duration: 0.5s;\n  -webkit-transition-timing-function: ease-in-out;\n  -webkit-transition-property: stroke-dashoffset;\n  -moz-transition-delay: 0.25s;\n  -moz-transition-duration: 0.5s;\n  -moz-transition-timing-function: ease-in-out;\n  -moz-transition-property: stroke-dashoffset;\n  -ms-transition-delay: 0.25s;\n  -ms-transition-duration: 0.5s;\n  -ms-transition-timing-function: ease-in-out;\n  -ms-transition-property: stroke-dashoffset;\n  transition-delay: 0.25s;\n  transition-duration: 0.5s;\n  transition-timing-function: ease-in-out;\n  transition-property: stroke-dashoffset;\n}\n\n.btn--svg__label {\n  -webkit-font-smoothing: antialiased;\n  font-family: sans-serif;\n  font-weight: bold;\n  text-align: center;\n  color: black;\n  z-index: 3;\n  width: 100%;\n  -webkit-transition: color 0.5s ease-in-out;\n  -moz-transition: color 0.5s ease-in-out;\n  -ms-transition: color 0.5s ease-in-out;\n  transition: color 0.5s ease-in-out;\n}\n\n.btn--svg__circle circle {\n  -webkit-transition: transform 0.5s ease-in-out;\n  -webkit-transform: scale(1.1);\n  -webkit-transform-origin: 50% 50%;\n  -moz-transition: transform 0.5s ease-in-out;\n  -moz-transform: scale(1.1);\n  -moz-transform-origin: 50% 50%;\n  -ms-transition: transform 0.5s ease-in-out;\n  -ms-transform: scale(1.1);\n  -ms-transform-origin: 50% 50%;\n  transition: transform 0.5s ease-in-out;\n  transform: scale(1.1);\n  transform-origin: 50% 50%;\n}\n\n.btn--svg__border--left path,\n.btn--svg__border--right path {\n  stroke-dasharray: 61.8204345703125 61.8204345703125;\n  -webkit-transition-duration: 0s;\n  -webkit-transition-timing-function: ease-in-out;\n  -webkit-transition-property: stroke-dashoffset;\n  -webkit-transition-delay: 0.5s;\n  -moz-transition-duration: 0s;\n  -moz-transition-timing-function: ease-in-out;\n  -moz-transition-property: stroke-dashoffset;\n  -moz-transition-delay: 0.5s;\n  -ms-transition-duration: 0s;\n  -ms-transition-timing-function: ease-in-out;\n  -ms-transition-property: stroke-dashoffset;\n  -ms-transition-delay: 0.5s;\n  transition-duration: 0s;\n  transition-timing-function: ease-in-out;\n  transition-property: stroke-dashoffset;\n  transition-delay: 0.5s;\n}\n\n.btn--svg__border--left path {\n  stroke-dashoffset: -61.8204345703125;\n}\n\n.btn--svg__border--right path {\n  stroke-dashoffset: 61.8204345703125;\n}\n\n.btn--svg svg,\n.btn--svg__label {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  -webkit-transform-origin: 50% 50%;\n  -moz-transform: translate(-50%, -50%);\n  -moz-transform-origin: 50% 50%;\n  -ms-transform: translate(-50%, -50%);\n  -ms-transform-origin: 50% 50%;\n  transform: translate(-50%, -50%);\n  transform-origin: 50% 50%;\n}\n\n.c-white {\n  color: white;\n}\n\n.trailer {\n  margin-bottom: 40px;\n}\n\n.trailer--nano {\n  margin-bottom: 10px;\n}\n\na {\n  position: relative;\n  text-decoration: none;\n  color: red;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"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","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 20px;\n  background: #343541;\n}\n\n.timeline {\n  margin-top: 100px !important;\n  position: relative;\n  max-width: 800px;\n  margin: 0 auto;\n}\n\n.timeline-container {\n  background-color: #2021237e;\n  width: 100%;\n  margin-top: 100;\n}\n\n/*esse eh a linha*/\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 50%;\n  width: 2px;\n  background: #202123;\n  margin-left: -1px;\n  \n}\n\n.timeline-item {\n  position: relative;\n  padding: 40px 0;\n  clear: both;\n  \n}\n\n.timeline-item:before,\n.timeline-item:after {\n  content: '';\n  display: table;\n}\n\n.timeline-item:after {\n  clear: both;\n}\n\n/* caixa de texto */\n.timeline-item .content {\n  position: relative;\n  width: 45%;\n  padding: 20px;\n  background: #3e3f4b;\n  border-radius: 5px;\n  color: #ececf1;\n  text-align: justify;\n}\n\n.timeline-item .content h2 {\n  margin-top: 0;\n}\n\n.timeline-item .content p {\n  margin: 10px 0;\n}\n\n/* essa eh a bolinha */\n.timeline-item .timeline-icon {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 40px;\n  height: 40px;\n  line-height: 40px;\n  text-align: center;\n  border-radius: 50%;\n  background: #202123;\n  color: #ececf1;\n}\n\n.navbar {\n  position: fixed;\n  background-color: #202123;\n  width: 100%;\n  height: auto;   \n  z-index: 1;\n  top: 0;\n  left: 0;\n  right: 0;\n  text-align: left;\n  display: flex;\n  justify-content: space-between; \n  align-items: center;\n}\n.navbar h1{\n  margin-left: 35px;\n  color: #ececf1;\n}\n.navItens {\n  color: #ececf1;\n  margin-right: 35px;\n  text-decoration: none;\n  cursor: pointer;\n  font-size: medium;  \n  transition: all 0.2s ease-in-out;\n}\n  .navItens:hover {\n    font-size: large;\n    text-decoration: none;\n    color: #ececf1;\n  }\n\n  .navbar img {\n    width: 60px;\n    height: auto;\n    margin-top: 5px;\n  } \n\n  #modalContainer {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, 0.8);\n    display: none;\n    z-index: 9999;\n  }\n  \n  #modalContainer.show {\n    display: flex;\n  }\n  \n  .video-container {\n    position: relative;\n    max-width: 50%;\n    max-height: 50%;\n    margin: 0 auto;\n  }\n  \n  .video-container video {\n    display: block;\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n  }\n\n.right {\n  left: 450px;\n}\n\n.curisidades {\n  margin-top: 100px;\n  background-color: #202123;\n  padding: 60px;\n  border-radius: 6px;\n}\n\n  .curisidades p, h1 {\n    color: #ececf1;\n    text-align: justify;\n  }\n\n  .curisidades h1 {\n    font-size: 24px;\n  }\n\n  .curisidades img {\n    height: 100%;\n    width: auto;\n  }\n\n  .curisidades p {\n    font-size: 12px;\n  }\n\n.curisidade {\n  margin-bottom: 100px;\n}\n\n.part2 {\n  flex-direction: row-reverse;\n}\n\n.made {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  color: #ececf1;\n}\n\n.img-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n}\n\n.gpt {\n  width: 50px !important;\n  height: auto;\n}\n\n.logos {\n  width: 100px;\n  margin-left: 30px;\n  height: auto;\n}\n\n.scroll-to-top {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  background-color: rgba(128, 128, 128, 0.5);\n  border: 0;\n  border-radius: 6px;\n  cursor: pointer;\n}\n\n  .scroll-to-top:hover {\n    background-color: rgba(128, 128, 128, 0.5);\n    border: 0;\n  }\n\n.welcome {\n  margin-top: 100px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-size: 18px;\n  color: #ececf1;\n  width: 100%;\n}\n\n  .welcome h1 {\n    font-size: 32px;\n    text-align: center;\n  }\n\n.descripton {\n  text-align: center;\n  margin-top: 30px;\n}\n\n/* CODIGO CSS DO BOTAO */\n.btn {\n  font-size: 1em;\n  line-height: 1em;\n  letter-spacing: 0.04em;\n  display: inline-block;\n}\n\n.btn--svg {\n  position: relative;\n  height: 42px;\n  width: 190px;\n  overflow: hidden;\n  border-radius: 21px;\n}\n\n.btn--svg:hover .btn--svg__circle circle {\n  -webkit-transform: scale(0);\n  -moz-transform: scale(0);\n  -ms-transform: scale(0);\n  transform: scale(0);\n}\n\n.btn--svg:hover .btn--svg__label {\n  color: #fff;\n}\n\n.btn--svg:hover .btn--svg__border--left path,\n.btn--svg:hover .btn--svg__border--right path {\n  stroke-dasharray: 61.8204345703125 61.8204345703125;\n  stroke-dashoffset: 0;\n  -webkit-transition-delay: 0.25s;\n  -webkit-transition-duration: 0.5s;\n  -webkit-transition-timing-function: ease-in-out;\n  -webkit-transition-property: stroke-dashoffset;\n  -moz-transition-delay: 0.25s;\n  -moz-transition-duration: 0.5s;\n  -moz-transition-timing-function: ease-in-out;\n  -moz-transition-property: stroke-dashoffset;\n  -ms-transition-delay: 0.25s;\n  -ms-transition-duration: 0.5s;\n  -ms-transition-timing-function: ease-in-out;\n  -ms-transition-property: stroke-dashoffset;\n  transition-delay: 0.25s;\n  transition-duration: 0.5s;\n  transition-timing-function: ease-in-out;\n  transition-property: stroke-dashoffset;\n}\n\n.btn--svg__label {\n  -webkit-font-smoothing: antialiased;\n  font-family: sans-serif;\n  font-weight: bold;\n  text-align: center;\n  color: black;\n  z-index: 3;\n  width: 100%;\n  -webkit-transition: color 0.5s ease-in-out;\n  -moz-transition: color 0.5s ease-in-out;\n  -ms-transition: color 0.5s ease-in-out;\n  transition: color 0.5s ease-in-out;\n}\n\n.btn--svg__circle circle {\n  -webkit-transition: transform 0.5s ease-in-out;\n  -webkit-transform: scale(1.1);\n  -webkit-transform-origin: 50% 50%;\n  -moz-transition: transform 0.5s ease-in-out;\n  -moz-transform: scale(1.1);\n  -moz-transform-origin: 50% 50%;\n  -ms-transition: transform 0.5s ease-in-out;\n  -ms-transform: scale(1.1);\n  -ms-transform-origin: 50% 50%;\n  transition: transform 0.5s ease-in-out;\n  transform: scale(1.1);\n  transform-origin: 50% 50%;\n}\n\n.btn--svg__border--left path,\n.btn--svg__border--right path {\n  stroke-dasharray: 61.8204345703125 61.8204345703125;\n  -webkit-transition-duration: 0s;\n  -webkit-transition-timing-function: ease-in-out;\n  -webkit-transition-property: stroke-dashoffset;\n  -webkit-transition-delay: 0.5s;\n  -moz-transition-duration: 0s;\n  -moz-transition-timing-function: ease-in-out;\n  -moz-transition-property: stroke-dashoffset;\n  -moz-transition-delay: 0.5s;\n  -ms-transition-duration: 0s;\n  -ms-transition-timing-function: ease-in-out;\n  -ms-transition-property: stroke-dashoffset;\n  -ms-transition-delay: 0.5s;\n  transition-duration: 0s;\n  transition-timing-function: ease-in-out;\n  transition-property: stroke-dashoffset;\n  transition-delay: 0.5s;\n}\n\n.btn--svg__border--left path {\n  stroke-dashoffset: -61.8204345703125;\n}\n\n.btn--svg__border--right path {\n  stroke-dashoffset: 61.8204345703125;\n}\n\n.btn--svg svg,\n.btn--svg__label {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  -webkit-transform-origin: 50% 50%;\n  -moz-transform: translate(-50%, -50%);\n  -moz-transform-origin: 50% 50%;\n  -ms-transform: translate(-50%, -50%);\n  -ms-transform-origin: 50% 50%;\n  transform: translate(-50%, -50%);\n  transform-origin: 50% 50%;\n}\n\n.c-white {\n  color: white;\n}\n\n.trailer {\n  margin-bottom: 40px;\n}\n\n.trailer--nano {\n  margin-bottom: 10px;\n}\n\na {\n  position: relative;\n  text-decoration: none;\n  color: red;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -41838,6 +41617,20 @@ module.exports = function (item) {
   }
   return [content].join("\n");
 };
+
+/***/ }),
+
+/***/ "./src/assets/welcome.mp4":
+/*!********************************!*\
+  !*** ./src/assets/welcome.mp4 ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "media/welcome.34fdcb13.mp4");
 
 /***/ }),
 
@@ -44964,6 +44757,29 @@ const unwrap = (value) => reverseTransformCache.get(value);
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -44979,12 +44795,14 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
-/* harmony import */ var _utils_firebaseConnection_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/firebaseConnection.js */ "./src/utils/firebaseConnection.js");
-/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
+/* harmony import */ var _src_assets_welcome_mp4__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/assets/welcome.mp4 */ "./src/assets/welcome.mp4");
+/* harmony import */ var _utils_firebaseConnection_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/firebaseConnection.js */ "./src/utils/firebaseConnection.js");
+/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 
 
 
@@ -45010,8 +44828,8 @@ var getBoxes = /*#__PURE__*/function () {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           try {
-            q = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.query)((0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.collection)(_utils_firebaseConnection_js__WEBPACK_IMPORTED_MODULE_2__["default"], 'posts'), (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.orderBy)('eventYear', 'asc'));
-            (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.onSnapshot)(q, function (querySnapshot) {
+            q = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_4__.query)((0,firebase_firestore__WEBPACK_IMPORTED_MODULE_4__.collection)(_utils_firebaseConnection_js__WEBPACK_IMPORTED_MODULE_3__["default"], 'posts'), (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_4__.orderBy)('eventYear', 'asc'));
+            (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_4__.onSnapshot)(q, function (querySnapshot) {
               querySnapshot.forEach(function (doc) {
                 var _doc$data = doc.data(),
                   text = _doc$data.text,
@@ -45033,6 +44851,19 @@ var getBoxes = /*#__PURE__*/function () {
     return _ref.apply(this, arguments);
   };
 }();
+var handleVideo = function handleVideo() {
+  var button = document.querySelector('.js-animated-button');
+  button.addEventListener('click', function () {
+    var modalContainer = document.getElementById('modalContainer');
+    var html = "\n        <div id=\"modalContainer\" class=\"d-flex align-items-center justify-content-center\">\n        <div class=\"video-container\">\n            <video id=\"myVideo\" src=\"".concat(_src_assets_welcome_mp4__WEBPACK_IMPORTED_MODULE_2__["default"], "\" controls></video>\n            <button class=\"close-button btn btn-light\">Close</button>\n        </div>\n        </div>   \n        ");
+    modalContainer.innerHTML = html;
+    modalContainer.classList.add('show');
+    var closeButton = modalContainer.querySelector('.close-button');
+    closeButton.addEventListener('click', function () {
+      modalContainer.classList.remove('show');
+    });
+  });
+};
 var buttonListennier = function buttonListennier() {
   document.addEventListener('DOMContentLoaded', function () {
     var scrollToTopBtn = document.querySelector('.scroll-to-top');
@@ -45062,6 +44893,7 @@ var buttonListennier = function buttonListennier() {
   });
 };
 buttonListennier();
+handleVideo();
 getBoxes();
 })();
 
