@@ -43,5 +43,36 @@ const getBoxes = async () => {
     }
 }
 
+const buttonListennier = () => {
+    document.addEventListener('DOMContentLoaded', function () {
+        const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+        // Exibir ou ocultar o botão de rolagem ao rolar a página
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        // Rolar para o topo ao clicar no botão
+        scrollToTopBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const scrollDuration = 800;
+            const scrollStep = -window.scrollY / (scrollDuration / 15);
+
+            const scrollInterval = setInterval(function () {
+                if (window.scrollY !== 0) {
+                    window.scrollBy(0, scrollStep);
+                } else {
+                    clearInterval(scrollInterval);
+                }
+            }, 15);
+        });
+    });
+}
+
+buttonListennier()
 getBoxes()
-console.log(111232132)

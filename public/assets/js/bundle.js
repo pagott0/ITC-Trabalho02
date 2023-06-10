@@ -41494,7 +41494,228 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 20px;\n  background: #343541;\n}\n\n.timeline {\n  margin-top: 100px !important;\n  position: relative;\n  max-width: 800px;\n  margin: 0 auto;\n}\n\n.timeline-container {\n  background-color: #2021237e;\n  width: 100%;\n  margin-top: 100;\n}\n\n/*esse eh a linha*/\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 50%;\n  width: 2px;\n  background: #202123;\n  margin-left: -1px;\n  \n}\n\n.timeline-item {\n  position: relative;\n  padding: 40px 0;\n  clear: both;\n  \n}\n\n.timeline-item:before,\n.timeline-item:after {\n  content: '';\n  display: table;\n}\n\n.timeline-item:after {\n  clear: both;\n}\n\n/* caixa de texto */\n.timeline-item .content {\n  position: relative;\n  width: 45%;\n  padding: 20px;\n  background: #3e3f4b;\n  border-radius: 5px;\n  color: #ececf1;\n  text-align: justify;\n}\n\n.timeline-item .content h2 {\n  margin-top: 0;\n}\n\n.timeline-item .content p {\n  margin: 10px 0;\n}\n\n/* essa eh a bolinha */\n.timeline-item .timeline-icon {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 40px;\n  height: 40px;\n  line-height: 40px;\n  text-align: center;\n  border-radius: 50%;\n  background: #202123;\n  color: #ececf1;\n}\n\n.navbar {\n  position: fixed;\n  background-color: #202123;\n  width: 100%;\n  height: auto;   \n  z-index: 1;\n  top: 0;\n  left: 0;\n  right: 0;\n  text-align: left;\n  display: flex;\n  justify-content: space-between; \n  align-items: center;\n}\n.navbar h1{\n  margin-left: 35px;\n  color: #ececf1;\n}\n.navItens {\n  color: #ececf1;\n  margin-right: 35px;\n  text-decoration: none;\n  cursor: pointer;\n  font-size: medium;  \n  transition: all 0.2s ease-in-out;\n}\n  .navItens:hover {\n    font-size: large;\n    text-decoration: none;\n    color: #ececf1;\n  }\n\n  .navbar img {\n    width: 60px;\n    height: auto;\n    margin-top: 5px;\n  } \n  \n  .video-container {\n    margin-top: 100px !important;\n    position: relative;\n    padding-bottom: 56.25%;\n    height: 0;\n    overflow: hidden;\n  }\n\n  .video-container video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n.right {\n  left: 450px;\n}\n\n.curisidades {\n  margin-top: 100px;\n  background-color: #202123;\n  padding: 60px;\n  border-radius: 6px;\n}\n\n  .curisidades p, h1 {\n    color: #ececf1;\n    text-align: justify;\n  }\n\n  .curisidades h1 {\n    font-size: 24px;\n  }\n\n  .curisidades img {\n    height: 100%;\n    width: auto;\n  }\n\n  .curisidades p {\n    font-size: 12px;\n  }\n\n.curisidade {\n  margin-bottom: 100px;\n}\n\n.part2 {\n  flex-direction: row-reverse;\n}\n\n.made {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  color: #ececf1;\n}\n\n.img-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n}\n\n.gpt {\n  width: 50px !important;\n  height: auto;\n}\n\n.logos {\n  width: 100px;\n  margin-left: 30px;\n  height: auto;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;AACxB;;AAEA;EACE,8BAA8B;EAC9B,SAAS;EACT,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,4BAA4B;EAC5B,kBAAkB;EAClB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,2BAA2B;EAC3B,WAAW;EACX,eAAe;AACjB;;AAEA,kBAAkB;AAClB;EACE,WAAW;EACX,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,SAAS;EACT,UAAU;EACV,mBAAmB;EACnB,iBAAiB;;AAEnB;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,WAAW;;AAEb;;AAEA;;EAEE,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,WAAW;AACb;;AAEA,mBAAmB;AACnB;EACE,kBAAkB;EAClB,UAAU;EACV,aAAa;EACb,mBAAmB;EACnB,kBAAkB;EAClB,cAAc;EACd,mBAAmB;AACrB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,cAAc;AAChB;;AAEA,sBAAsB;AACtB;EACE,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,2BAA2B;EAC3B,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,kBAAkB;EAClB,kBAAkB;EAClB,mBAAmB;EACnB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,yBAAyB;EACzB,WAAW;EACX,YAAY;EACZ,UAAU;EACV,MAAM;EACN,OAAO;EACP,QAAQ;EACR,gBAAgB;EAChB,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;AACA;EACE,iBAAiB;EACjB,cAAc;AAChB;AACA;EACE,cAAc;EACd,kBAAkB;EAClB,qBAAqB;EACrB,eAAe;EACf,iBAAiB;EACjB,gCAAgC;AAClC;EACE;IACE,gBAAgB;IAChB,qBAAqB;IACrB,cAAc;EAChB;;EAEA;IACE,WAAW;IACX,YAAY;IACZ,eAAe;EACjB;;EAEA;IACE,4BAA4B;IAC5B,kBAAkB;IAClB,sBAAsB;IACtB,SAAS;IACT,gBAAgB;EAClB;;EAEA;IACE,kBAAkB;IAClB,MAAM;IACN,OAAO;IACP,WAAW;IACX,YAAY;IACZ,iBAAiB;EACnB;;AAEF;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,yBAAyB;EACzB,aAAa;EACb,kBAAkB;AACpB;;EAEE;IACE,cAAc;IACd,mBAAmB;EACrB;;EAEA;IACE,eAAe;EACjB;;EAEA;IACE,YAAY;IACZ,WAAW;EACb;;EAEA;IACE,eAAe;EACjB;;AAEF;EACE,oBAAoB;AACtB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,sBAAsB;EACtB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,YAAY;AACd","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 20px;\n  background: #343541;\n}\n\n.timeline {\n  margin-top: 100px !important;\n  position: relative;\n  max-width: 800px;\n  margin: 0 auto;\n}\n\n.timeline-container {\n  background-color: #2021237e;\n  width: 100%;\n  margin-top: 100;\n}\n\n/*esse eh a linha*/\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 50%;\n  width: 2px;\n  background: #202123;\n  margin-left: -1px;\n  \n}\n\n.timeline-item {\n  position: relative;\n  padding: 40px 0;\n  clear: both;\n  \n}\n\n.timeline-item:before,\n.timeline-item:after {\n  content: '';\n  display: table;\n}\n\n.timeline-item:after {\n  clear: both;\n}\n\n/* caixa de texto */\n.timeline-item .content {\n  position: relative;\n  width: 45%;\n  padding: 20px;\n  background: #3e3f4b;\n  border-radius: 5px;\n  color: #ececf1;\n  text-align: justify;\n}\n\n.timeline-item .content h2 {\n  margin-top: 0;\n}\n\n.timeline-item .content p {\n  margin: 10px 0;\n}\n\n/* essa eh a bolinha */\n.timeline-item .timeline-icon {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 40px;\n  height: 40px;\n  line-height: 40px;\n  text-align: center;\n  border-radius: 50%;\n  background: #202123;\n  color: #ececf1;\n}\n\n.navbar {\n  position: fixed;\n  background-color: #202123;\n  width: 100%;\n  height: auto;   \n  z-index: 1;\n  top: 0;\n  left: 0;\n  right: 0;\n  text-align: left;\n  display: flex;\n  justify-content: space-between; \n  align-items: center;\n}\n.navbar h1{\n  margin-left: 35px;\n  color: #ececf1;\n}\n.navItens {\n  color: #ececf1;\n  margin-right: 35px;\n  text-decoration: none;\n  cursor: pointer;\n  font-size: medium;  \n  transition: all 0.2s ease-in-out;\n}\n  .navItens:hover {\n    font-size: large;\n    text-decoration: none;\n    color: #ececf1;\n  }\n\n  .navbar img {\n    width: 60px;\n    height: auto;\n    margin-top: 5px;\n  } \n  \n  .video-container {\n    margin-top: 100px !important;\n    position: relative;\n    padding-bottom: 56.25%;\n    height: 0;\n    overflow: hidden;\n  }\n\n  .video-container video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n.right {\n  left: 450px;\n}\n\n.curisidades {\n  margin-top: 100px;\n  background-color: #202123;\n  padding: 60px;\n  border-radius: 6px;\n}\n\n  .curisidades p, h1 {\n    color: #ececf1;\n    text-align: justify;\n  }\n\n  .curisidades h1 {\n    font-size: 24px;\n  }\n\n  .curisidades img {\n    height: 100%;\n    width: auto;\n  }\n\n  .curisidades p {\n    font-size: 12px;\n  }\n\n.curisidade {\n  margin-bottom: 100px;\n}\n\n.part2 {\n  flex-direction: row-reverse;\n}\n\n.made {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  color: #ececf1;\n}\n\n.img-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n}\n\n.gpt {\n  width: 50px !important;\n  height: auto;\n}\n\n.logos {\n  width: 100px;\n  margin-left: 30px;\n  height: auto;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #343541;
+}
+
+.timeline {
+  margin-top: 100px !important;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-container {
+  background-color: #2021237e;
+  width: 100%;
+  margin-top: 100;
+}
+
+/*esse eh a linha*/
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #202123;
+  margin-left: -1px;
+  
+}
+
+.timeline-item {
+  position: relative;
+  padding: 40px 0;
+  clear: both;
+  
+}
+
+.timeline-item:before,
+.timeline-item:after {
+  content: '';
+  display: table;
+}
+
+.timeline-item:after {
+  clear: both;
+}
+
+/* caixa de texto */
+.timeline-item .content {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  background: #3e3f4b;
+  border-radius: 5px;
+  color: #ececf1;
+  text-align: justify;
+}
+
+.timeline-item .content h2 {
+  margin-top: 0;
+}
+
+.timeline-item .content p {
+  margin: 10px 0;
+}
+
+/* essa eh a bolinha */
+.timeline-item .timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: #202123;
+  color: #ececf1;
+}
+
+.navbar {
+  position: fixed;
+  background-color: #202123;
+  width: 100%;
+  height: auto;   
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+.navbar h1{
+  margin-left: 35px;
+  color: #ececf1;
+}
+.navItens {
+  color: #ececf1;
+  margin-right: 35px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: medium;  
+  transition: all 0.2s ease-in-out;
+}
+  .navItens:hover {
+    font-size: large;
+    text-decoration: none;
+    color: #ececf1;
+  }
+
+  .navbar img {
+    width: 60px;
+    height: auto;
+    margin-top: 5px;
+  } 
+  
+  .video-container {
+    margin-top: 100px !important;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.right {
+  left: 450px;
+}
+
+.curisidades {
+  margin-top: 100px;
+  background-color: #202123;
+  padding: 60px;
+  border-radius: 6px;
+}
+
+  .curisidades p, h1 {
+    color: #ececf1;
+    text-align: justify;
+  }
+
+  .curisidades h1 {
+    font-size: 24px;
+  }
+
+  .curisidades img {
+    height: 100%;
+    width: auto;
+  }
+
+  .curisidades p {
+    font-size: 12px;
+  }
+
+.curisidade {
+  margin-bottom: 100px;
+}
+
+.part2 {
+  flex-direction: row-reverse;
+}
+
+.made {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ececf1;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.gpt {
+  width: 50px !important;
+  height: auto;
+}
+
+.logos {
+  width: 100px;
+  margin-left: 30px;
+  height: auto;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+  .scroll-to-top:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 0;
+  }`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;AACxB;;AAEA;EACE,8BAA8B;EAC9B,SAAS;EACT,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,4BAA4B;EAC5B,kBAAkB;EAClB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,2BAA2B;EAC3B,WAAW;EACX,eAAe;AACjB;;AAEA,kBAAkB;AAClB;EACE,WAAW;EACX,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,SAAS;EACT,UAAU;EACV,mBAAmB;EACnB,iBAAiB;;AAEnB;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,WAAW;;AAEb;;AAEA;;EAEE,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,WAAW;AACb;;AAEA,mBAAmB;AACnB;EACE,kBAAkB;EAClB,UAAU;EACV,aAAa;EACb,mBAAmB;EACnB,kBAAkB;EAClB,cAAc;EACd,mBAAmB;AACrB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,cAAc;AAChB;;AAEA,sBAAsB;AACtB;EACE,kBAAkB;EAClB,MAAM;EACN,SAAS;EACT,2BAA2B;EAC3B,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,kBAAkB;EAClB,kBAAkB;EAClB,mBAAmB;EACnB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,yBAAyB;EACzB,WAAW;EACX,YAAY;EACZ,UAAU;EACV,MAAM;EACN,OAAO;EACP,QAAQ;EACR,gBAAgB;EAChB,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;AACA;EACE,iBAAiB;EACjB,cAAc;AAChB;AACA;EACE,cAAc;EACd,kBAAkB;EAClB,qBAAqB;EACrB,eAAe;EACf,iBAAiB;EACjB,gCAAgC;AAClC;EACE;IACE,gBAAgB;IAChB,qBAAqB;IACrB,cAAc;EAChB;;EAEA;IACE,WAAW;IACX,YAAY;IACZ,eAAe;EACjB;;EAEA;IACE,4BAA4B;IAC5B,kBAAkB;IAClB,sBAAsB;IACtB,SAAS;IACT,gBAAgB;EAClB;;EAEA;IACE,kBAAkB;IAClB,MAAM;IACN,OAAO;IACP,WAAW;IACX,YAAY;IACZ,iBAAiB;EACnB;;AAEF;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,yBAAyB;EACzB,aAAa;EACb,kBAAkB;AACpB;;EAEE;IACE,cAAc;IACd,mBAAmB;EACrB;;EAEA;IACE,eAAe;EACjB;;EAEA;IACE,YAAY;IACZ,WAAW;EACb;;EAEA;IACE,eAAe;EACjB;;AAEF;EACE,oBAAoB;AACtB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,sBAAsB;EACtB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,YAAY;AACd;;AAEA;EACE,eAAe;EACf,YAAY;EACZ,WAAW;EACX,0CAA0C;EAC1C,SAAS;EACT,kBAAkB;EAClB,eAAe;AACjB;;EAEE;IACE,0CAA0C;IAC1C,SAAS;EACX","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  margin: 0;\n  padding: 20px;\n  background: #343541;\n}\n\n.timeline {\n  margin-top: 100px !important;\n  position: relative;\n  max-width: 800px;\n  margin: 0 auto;\n}\n\n.timeline-container {\n  background-color: #2021237e;\n  width: 100%;\n  margin-top: 100;\n}\n\n/*esse eh a linha*/\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 50%;\n  width: 2px;\n  background: #202123;\n  margin-left: -1px;\n  \n}\n\n.timeline-item {\n  position: relative;\n  padding: 40px 0;\n  clear: both;\n  \n}\n\n.timeline-item:before,\n.timeline-item:after {\n  content: '';\n  display: table;\n}\n\n.timeline-item:after {\n  clear: both;\n}\n\n/* caixa de texto */\n.timeline-item .content {\n  position: relative;\n  width: 45%;\n  padding: 20px;\n  background: #3e3f4b;\n  border-radius: 5px;\n  color: #ececf1;\n  text-align: justify;\n}\n\n.timeline-item .content h2 {\n  margin-top: 0;\n}\n\n.timeline-item .content p {\n  margin: 10px 0;\n}\n\n/* essa eh a bolinha */\n.timeline-item .timeline-icon {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 40px;\n  height: 40px;\n  line-height: 40px;\n  text-align: center;\n  border-radius: 50%;\n  background: #202123;\n  color: #ececf1;\n}\n\n.navbar {\n  position: fixed;\n  background-color: #202123;\n  width: 100%;\n  height: auto;   \n  z-index: 1;\n  top: 0;\n  left: 0;\n  right: 0;\n  text-align: left;\n  display: flex;\n  justify-content: space-between; \n  align-items: center;\n}\n.navbar h1{\n  margin-left: 35px;\n  color: #ececf1;\n}\n.navItens {\n  color: #ececf1;\n  margin-right: 35px;\n  text-decoration: none;\n  cursor: pointer;\n  font-size: medium;  \n  transition: all 0.2s ease-in-out;\n}\n  .navItens:hover {\n    font-size: large;\n    text-decoration: none;\n    color: #ececf1;\n  }\n\n  .navbar img {\n    width: 60px;\n    height: auto;\n    margin-top: 5px;\n  } \n  \n  .video-container {\n    margin-top: 100px !important;\n    position: relative;\n    padding-bottom: 56.25%;\n    height: 0;\n    overflow: hidden;\n  }\n\n  .video-container video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n.right {\n  left: 450px;\n}\n\n.curisidades {\n  margin-top: 100px;\n  background-color: #202123;\n  padding: 60px;\n  border-radius: 6px;\n}\n\n  .curisidades p, h1 {\n    color: #ececf1;\n    text-align: justify;\n  }\n\n  .curisidades h1 {\n    font-size: 24px;\n  }\n\n  .curisidades img {\n    height: 100%;\n    width: auto;\n  }\n\n  .curisidades p {\n    font-size: 12px;\n  }\n\n.curisidade {\n  margin-bottom: 100px;\n}\n\n.part2 {\n  flex-direction: row-reverse;\n}\n\n.made {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  color: #ececf1;\n}\n\n.img-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n}\n\n.gpt {\n  width: 50px !important;\n  height: auto;\n}\n\n.logos {\n  width: 100px;\n  margin-left: 30px;\n  height: auto;\n}\n\n.scroll-to-top {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  background-color: rgba(128, 128, 128, 0.5);\n  border: 0;\n  border-radius: 6px;\n  cursor: pointer;\n}\n\n  .scroll-to-top:hover {\n    background-color: rgba(128, 128, 128, 0.5);\n    border: 0;\n  }"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -44812,8 +45033,36 @@ var getBoxes = /*#__PURE__*/function () {
     return _ref.apply(this, arguments);
   };
 }();
+var buttonListennier = function buttonListennier() {
+  document.addEventListener('DOMContentLoaded', function () {
+    var scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+    // Exibir ou ocultar o botão de rolagem ao rolar a página
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        scrollToTopBtn.style.display = 'block';
+      } else {
+        scrollToTopBtn.style.display = 'none';
+      }
+    });
+
+    // Rolar para o topo ao clicar no botão
+    scrollToTopBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var scrollDuration = 800;
+      var scrollStep = -window.scrollY / (scrollDuration / 15);
+      var scrollInterval = setInterval(function () {
+        if (window.scrollY !== 0) {
+          window.scrollBy(0, scrollStep);
+        } else {
+          clearInterval(scrollInterval);
+        }
+      }, 15);
+    });
+  });
+};
+buttonListennier();
 getBoxes();
-console.log(111232132);
 })();
 
 /******/ })()
