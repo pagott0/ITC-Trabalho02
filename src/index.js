@@ -4,8 +4,26 @@ import 'bootstrap';
 import video from '../src/assets/welcome.mp4';
 
 import db from './utils/firebaseConnection.js'
-import { collection, query, orderBy, onSnapshot, addDoc } from "firebase/firestore"
-import { times } from 'lodash';
+import { collection, query, orderBy, onSnapshot } from "firebase/firestore"
+
+//Load Images
+import img1 from '../src/assets/bilionarios.jpeg';
+import img2 from '../src/assets/medico.jpeg';
+import img3 from '../src/assets/ChatGPT_logo.svg.png';
+import img4 from '../src/assets/LogoCopilotSemFundo.png';
+import img5 from '../src/assets/StableDiffAltaSemFundo.png';
+import img6 from '../src/assets/Synthesia.png';
+
+const imgs = document.querySelectorAll('img');
+const imgsArray = Array.from(imgs);
+
+const imageUrls = [img1, img2, img3, img4, img5, img6];
+
+imgsArray.shift(); // Remove the first element
+
+imgsArray.forEach((img, index) => {
+    img.src = imageUrls[index];
+});
 
 let status = true
 const boxOpen = () => {

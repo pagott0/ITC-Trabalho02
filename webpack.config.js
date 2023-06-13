@@ -1,7 +1,7 @@
 const path = require('path'); // CommonJS
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: {
     bundle: './src/index.js',
     bundle1: './src/admin/index.js'
@@ -38,7 +38,19 @@ module.exports = {
           }
         }
       ]
+    },
+    {
+      test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: 'images/[name].[hash:8].[ext]'
+          }
+        }
+      ]
     }
+
     ]
   },
   devtool: 'source-map'
