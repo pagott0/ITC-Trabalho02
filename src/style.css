@@ -39,7 +39,6 @@ body {
   position: relative;
   padding: 40px 0;
   clear: both;
-  
 }
 
 .timeline-item:before,
@@ -60,15 +59,21 @@ body {
   background: #3e3f4b;
   border-radius: 5px;
   color: #ececf1;
-  text-align: justify;
+  cursor: pointer;
 }
 
 .timeline-item .content h2 {
   margin-top: 0;
+  text-align: center;
 }
 
 .timeline-item .content p {
   margin: 10px 0;
+  display: none;
+}
+
+.show {
+  display: block !important;
 }
 
 /* essa eh a bolinha */
@@ -386,10 +391,4 @@ body {
 
 .trailer--nano {
   margin-bottom: 10px;
-}
-
-a {
-  position: relative;
-  text-decoration: none;
-  color: red;
 }

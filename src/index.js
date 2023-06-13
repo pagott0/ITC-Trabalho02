@@ -5,6 +5,19 @@ import video from '../src/assets/welcome.mp4';
 
 import db from './utils/firebaseConnection.js'
 import { collection, query, orderBy, onSnapshot, addDoc } from "firebase/firestore"
+import { times } from 'lodash';
+
+let status = true
+const boxOpen = () => {
+    const boxes = document.querySelectorAll('.box')
+
+    boxes.forEach(box => {
+        box.addEventListener('click', () => {
+            box.children[1].classList = status ? 'show' : 'unshow'
+            status = !status
+        })
+    })
+};
 
 let toggle = false;
 /* Call this function to add events, first parameter: text, second parameter: 
@@ -12,7 +25,7 @@ event name, third parameted: year */
 const toggleBox = (text, eventName, eventYear) => {
     const html = `
     <div class="timeline-item ">
-            <div class="content ${toggle ? "right" : ""}">
+            <div class="content box ${toggle ? "right" : ""}">
                 <h2>${eventName}</h2>
                 <p>${text}</p>
             </div>
@@ -25,24 +38,25 @@ const toggleBox = (text, eventName, eventYear) => {
     const element = document.createElement("div");
     element.innerHTML = html;
     timeline.appendChild(element);
-    toggle = !toggle;
+    toggle = !toggle
 }
 
 /* is called when the site is load, and should be responsabel
 to get all events from databse */
 const getBoxes = async () => {
     try {
-        const q = query(collection(db, 'posts'), orderBy('eventYear', 'asc'))
+        const q = query(collection(db, 'posts'), orderBy('eventYear', 'asc'));
         onSnapshot(q, (querySnapshot) => {
             querySnapshot.forEach((doc) => {
-                const { text, eventName, eventYear } = doc.data()
-                toggleBox(text, eventName, eventYear)
-            })
-        }, [])
+                const { text, eventName, eventYear } = doc.data();
+                toggleBox(text, eventName, eventYear);
+            });
+            boxOpen()
+        });
     } catch (err) {
-        console.log(err)
+        console.log(err);
     }
-}
+};
 
 const handleVideo = () => {
     const button = document.querySelector('.js-animated-button');
