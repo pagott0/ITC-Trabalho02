@@ -26,16 +26,20 @@ imgsArray.forEach((img, index) => {
     img.src = imageUrls[index];
 });
 
-let status = true
+
 const boxOpen = () => {
-    const boxes = document.querySelectorAll('.box')
+    const boxes = document.querySelectorAll('.box');
 
     boxes.forEach(box => {
         box.addEventListener('click', () => {
-            box.children[1].classList = status ? 'show' : 'unshow'
-            status = !status
-        })
-    })
+            const oldClass = box.children[1].classList;
+            if (oldClass.contains('show')) {
+                box.children[1].classList.remove('show');
+            } else {
+                box.children[1].classList.add('show');
+            }
+        });
+    });
 };
 
 let toggle = false;

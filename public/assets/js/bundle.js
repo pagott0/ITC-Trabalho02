@@ -44929,13 +44929,16 @@ imgsArray.splice(1, 1); // Remove o segundo elemento do array
 imgsArray.forEach(function (img, index) {
   img.src = imageUrls[index];
 });
-var status = true;
 var boxOpen = function boxOpen() {
   var boxes = document.querySelectorAll('.box');
   boxes.forEach(function (box) {
     box.addEventListener('click', function () {
-      box.children[1].classList = status ? 'show' : 'unshow';
-      status = !status;
+      var oldClass = box.children[1].classList;
+      if (oldClass.contains('show')) {
+        box.children[1].classList.remove('show');
+      } else {
+        box.children[1].classList.add('show');
+      }
     });
   });
 };
