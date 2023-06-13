@@ -7,19 +7,20 @@ import db from './utils/firebaseConnection.js'
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore"
 
 //Load Images
-import img1 from '../src/assets/bilionarios.jpeg';
-import img2 from '../src/assets/medico.jpeg';
-import img3 from '../src/assets/ChatGPT_logo.svg.png';
-import img4 from '../src/assets/LogoCopilotSemFundo.png';
-import img5 from '../src/assets/StableDiffAltaSemFundo.png';
-import img6 from '../src/assets/Synthesia.png';
+import img1 from '../src/assets/logo.png'
+import img2 from '../src/assets/bilionarios.jpeg';
+import img3 from '../src/assets/medico.jpeg';
+import img4 from '../src/assets/ChatGPT_logo.svg.png';
+import img5 from '../src/assets/LogoCopilotSemFundo.png';
+import img6 from '../src/assets/StableDiffAltaSemFundo.png';
+import img7 from '../src/assets/Synthesia.png';
 
 const imgs = document.querySelectorAll('img');
 const imgsArray = Array.from(imgs);
 
-const imageUrls = [img1, img2, img3, img4, img5, img6];
+const imageUrls = [img1, img2, img3, img4, img5, img6, img7];
 
-imgsArray.shift(); // Remove the first element
+imgsArray.splice(1, 1); // Remove o segundo elemento do array
 
 imgsArray.forEach((img, index) => {
     img.src = imageUrls[index];
