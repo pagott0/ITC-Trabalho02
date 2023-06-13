@@ -1,7 +1,7 @@
 const path = require('path'); // CommonJS
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     bundle: './src/index.js',
     bundle1: './src/admin/index.js'

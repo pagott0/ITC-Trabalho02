@@ -392,3 +392,49 @@ body {
 .trailer--nano {
   margin-bottom: 10px;
 }
+
+.box::before,
+.box::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+}
+
+.box::before,
+.box::after {
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  bottom: 0%;
+  right: 0%;
+}
+
+.box::before {
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+
+.box::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+
+.box:hover {
+  color: #fff;
+}
+
+.box:hover::before,
+.box:hover::after {
+  border-color: #fff;
+  transition: border-color 0s, width 0.3s, height 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.box:hover::before {
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+.box:hover::after {
+  transition-delay: 0s, 0.3s, 0s;
+}
