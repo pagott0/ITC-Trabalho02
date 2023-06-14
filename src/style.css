@@ -243,14 +243,14 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 36px;
   color: #ececf1;
   height: 80vh;
   width: 100%;
 }
 
   .welcome h1 {
-    font-size: 32px;
+    font-size: 64px;
     text-align: center;
   }
 
