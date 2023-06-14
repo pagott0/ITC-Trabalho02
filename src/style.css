@@ -238,6 +238,24 @@ body {
     border: 0;
   }
 
+  .title-timeline {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: #ececf1;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #202123;
+    border-radius: 40px;
+    width: 20%;
+    margin: 80px auto;
+}
+
+.title-timeline h2 {
+  margin-bottom: 0 !important;
+}
+
 .welcome {
   display: flex;
   align-items: center;
