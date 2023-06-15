@@ -124,7 +124,7 @@ body {
   }
 
   .navbar img {
-    width: 60px;
+    width: 100px;
     height: auto;
     margin-top: 5px;
   } 
@@ -175,19 +175,25 @@ body {
   }
 
   .curisidades h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .curisidades img {
     height: 100%;
     width: auto;
+    padding: 20px;
   }
 
   .curisidades p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
 .curisidade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
   margin-bottom: 100px;
 }
 

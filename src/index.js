@@ -14,13 +14,13 @@ import img4 from '../src/assets/ChatGPT_logo.svg.png';
 import img5 from '../src/assets/LogoCopilotSemFundo.png';
 import img6 from '../src/assets/StableDiffAltaSemFundo.png';
 import img7 from '../src/assets/Synthesia.png';
+import img8 from '../src/assets/logoICMCBranca.png'
 
 const imgs = document.querySelectorAll('img');
 const imgsArray = Array.from(imgs);
 
-const imageUrls = [img1, img2, img3, img4, img5, img6, img7];
+const imageUrls = [img1, img8, img2, img3, img4, img5, img6, img7];
 
-imgsArray.splice(1, 1); // Remove o segundo elemento do array
 imgsArray.splice(3, 1); // Remove o quarto elemento do array
 
 imgsArray.forEach((img, index) => {
