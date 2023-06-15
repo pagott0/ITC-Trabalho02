@@ -21,6 +21,7 @@ const imgsArray = Array.from(imgs);
 const imageUrls = [img1, img2, img3, img4, img5, img6, img7];
 
 imgsArray.splice(1, 1); // Remove o segundo elemento do array
+imgsArray.splice(3, 1); // Remove o quarto elemento do array
 
 imgsArray.forEach((img, index) => {
     img.src = imageUrls[index];
@@ -137,6 +138,27 @@ const buttonListennier = () => {
     });
 }
 
+const handlePerson = () => {
+    const newImgButton = document.querySelector('#gerarNovaImagem');
+
+    newImgButton.addEventListener('click', () => {
+        const img = document.querySelector('#person');
+
+        if (img) {
+            const randomNumber = Math.floor(Math.random() * 1000000); // Gera um número aleatório entre 0 e 999999
+            const imageUrl = `https://thispersondoesnotexist.com/?random=${randomNumber}`;
+
+            const newImg = document.createElement('img');
+            newImg.src = imageUrl;
+            newImg.id = 'person'
+            newImg.alt = "Essa pessoa não existe";
+
+            img.parentNode.replaceChild(newImg, img);
+        }
+    });
+};
+
 buttonListennier()
 handleVideo()
 getBoxes()
+handlePerson()
