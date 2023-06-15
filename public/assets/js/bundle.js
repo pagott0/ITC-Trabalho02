@@ -44940,7 +44940,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var imgs = document.querySelectorAll('img');
 var imgsArray = Array.from(imgs);
 var imageUrls = [_src_assets_logo_png__WEBPACK_IMPORTED_MODULE_5__["default"], _src_assets_logoICMCBranca_png__WEBPACK_IMPORTED_MODULE_12__["default"], _src_assets_bilionarios_jpeg__WEBPACK_IMPORTED_MODULE_6__["default"], _src_assets_medico_jpeg__WEBPACK_IMPORTED_MODULE_7__["default"], _src_assets_ChatGPT_logo_svg_png__WEBPACK_IMPORTED_MODULE_8__["default"], _src_assets_LogoCopilotSemFundo_png__WEBPACK_IMPORTED_MODULE_9__["default"], _src_assets_StableDiffAltaSemFundo_png__WEBPACK_IMPORTED_MODULE_10__["default"], _src_assets_Synthesia_png__WEBPACK_IMPORTED_MODULE_11__["default"]];
-imgsArray.splice(3, 1); // Remove o quarto elemento do array
+imgsArray.splice(4, 1); // Remove o quarto elemento do array
 
 imgsArray.forEach(function (img, index) {
   img.src = imageUrls[index];

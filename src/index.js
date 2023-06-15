@@ -21,7 +21,7 @@ const imgsArray = Array.from(imgs);
 
 const imageUrls = [img1, img8, img2, img3, img4, img5, img6, img7];
 
-imgsArray.splice(3, 1); // Remove o quarto elemento do array
+imgsArray.splice(4, 1); // Remove o quarto elemento do array
 
 imgsArray.forEach((img, index) => {
     img.src = imageUrls[index];
