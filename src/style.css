@@ -117,6 +117,20 @@ body {
   font-size: medium;  
   transition: all 0.2s ease-in-out;
 }
+
+.teste-agora {
+  background-color: #ececf1;
+  color: #3e3f4b;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.teste-agora:hover {
+  background-color: #3e3f4b !important;
+  color: #ececf1 !important;
+}
+
   .navItens:hover {
     font-size: large;
     text-decoration: none;
@@ -309,7 +323,7 @@ body {
   }
 
   .person .content h2 {
-    font-size: 40px;
+    font-size: 52px;
   }
 
   .person .content .button {
