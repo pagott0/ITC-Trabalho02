@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="welcome container">
+    <div class="welcome">
+        <div class="video-nosso-container" >
+        </div>
         <h1>
             HISTÓRIA DA<br>
             <p style="font-weight: bold; font-size: 56px;" >INTELIGÊNCIA<br>
@@ -31,27 +33,28 @@
             </svg>
         </a>          
     </div>
-    <hr style="background-color: white; width: 1000px; margin-top: 100px;" />
     <a href="#" class="btn btn-primary scroll-to-top">&uarr;</a>
     <div class="navbar">
         <img style="margin-left: 50px" class="navItens img-fluid">
         <div>
             <a class="navItens" href="#timeline">TIMELINE</a>
             <a class="navItens" href="#curisidades">CURIOSIDADES</a>
-            <a class="navItens teste-agora" href="#person">TESTE AGORA!</a>
+            <a class="navItens teste-agora" href="#persons">TESTE AGORA!</a>
             <a class="navItens" href="admin.html">ADMIN</a>
             <img class="navItens" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Webysther_20170627_-_Logo_ICMC-USP.svg/1200px-Webysther_20170627_-_Logo_ICMC-USP.svg.png" alt="ICMC">
         </div>
     </div>
+    <div style="margin-bottom: 40px;" id="timeline" ></div>
     <div class="container container-timeline">
         <div class="row title-timeline">
             <h2>TIMELINE</h2>
         </div>
     </div>
-    <div class="timeline" id="timeline"></div>
+    <div class="timeline"></div>
     <div id="modalContainer"></div>
 
-    <div class="container curisidades" id="curisidades">
+    <div style="margin-bottom: 40px;" id="curisidades" ></div>
+    <div class="container curisidades">
         <h4 style="color: #ececf1; margin-bottom: 30px; font-size: 36px">Curiosidades</h4>
         <div class="row curisidade">
             <div class="col-sm" >
@@ -120,7 +123,7 @@
         </div>
 
     </div>
-    <div class="row person" id="person">
+    <div class="row person" id="persons">
         <div class="content" >
             <h2>Sim. Acredite se quiser.</h2>
             <small>Mas a pessoa ao lado não existe. <br/>

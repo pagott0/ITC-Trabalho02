@@ -2,6 +2,7 @@ import './style.css'
 import 'bootstrap';
 
 import video from '../src/assets/welcome.mp4';
+import james from '../src/assets/james.mp4'
 
 import db from './utils/firebaseConnection.js'
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore"
@@ -18,8 +19,8 @@ import img8 from '../src/assets/logoICMCBranca.png'
 
 import background from '../src/assets/5040007.jpg'
 
-const welcome = document.querySelector('.welcome')
-welcome.style.backgroundImage = `url(${background});`
+const welcome = document.querySelector('.welcome');
+welcome.style.backgroundImage = `url(${background})`;
 
 const imgs = document.querySelectorAll('img');
 const imgsArray = Array.from(imgs);
@@ -112,6 +113,16 @@ const handleVideo = () => {
     });
 }
 
+const handleOurVideo = () => {
+    const videoContainer = document.querySelector('.video-nosso-container')
+
+    const html = `
+    <video src="${james}" autoplay controls></video>
+    `
+
+    videoContainer.innerHTML = html
+}
+
 const buttonListennier = () => {
     document.addEventListener('DOMContentLoaded', function () {
         const scrollToTopBtn = document.querySelector('.scroll-to-top');
@@ -167,3 +178,4 @@ buttonListennier()
 handleVideo()
 getBoxes()
 handlePerson()
+handleOurVideo()
