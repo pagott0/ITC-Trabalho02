@@ -263,6 +263,8 @@ body {
 }
 
 .welcome {
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,43 +293,41 @@ body {
   margin-top: 100px;
   color: #ececf1;
   font-weight: bold;
-  flex-direction: column;
-  background-color: #202123;
+  flex-direction: row;
   padding: 50px 0;
+  margin: 100px auto;
 }
 
   .person .content {
-    text-align: center;
-    max-width: 100%;
-    width: 60%;
+    text-align: left;
+    max-width: 80%;
+    width: 40%;
   }
 
-  .person button {
-    background-color: #3e3f4b;
-    border: none;
-    border-radius: 8px;
-    color: #ececf1;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
-    transition-duration: 0.4s;
+  .person .content small {
+    font-size: 20px;
   }
 
-  .person button:hover {
-    background-color: #ececf1; /* Green */
-    color: #3e3f4b;
+  .person .content h2 {
+    font-size: 40px;
+  }
+
+  .person .content .button {
+    text-align: center;
+  }
+
+  .person .content .button a {
+    margin-top: 10px !important;
   }
 
 .person img {
   margin-top: 40px;
-  border-radius: 2px;
+  border-radius: 4px;
   max-width: 100%;
   height: auto;
   width: 30%; 
   margin-bottom: 100px;
+  margin-left: 40px;
 }
 
 /* CODIGO CSS DO BOTAO */
@@ -337,6 +337,7 @@ body {
   line-height: 1em;
   letter-spacing: 0.04em;
   display: inline-block;
+  scale: 1.5;
 }
 
 .btn--svg {
