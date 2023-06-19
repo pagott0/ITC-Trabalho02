@@ -2,7 +2,7 @@ import './style.css'
 import 'bootstrap';
 
 import video from '../src/assets/welcome.mp4';
-import james from '../src/assets/james.mp4'
+import james from '../src/assets/removeme.mp4'
 
 import db from './utils/firebaseConnection.js'
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore"

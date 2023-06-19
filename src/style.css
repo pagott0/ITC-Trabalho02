@@ -298,9 +298,20 @@ body {
 }
 
 .video-nosso-container video {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
   border-radius: 10px;
+}
+
+/* Consulta de mídia para dispositivos móveis com largura máxima de 600px */
+@media (max-width: 600px) {
+  .video-nosso-container {
+    position: relative; /* Altera para posição relativa para permitir que o contêiner se ajuste à largura da tela */
+    left: 0;
+    margin: 0 auto; /* Centraliza o contêiner na tela */
+    width: 80%; /* Ajusta a largura do contêiner conforme necessário */
+  }
 }
 
   .welcome h1 {
