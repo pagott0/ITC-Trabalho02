@@ -44,11 +44,17 @@ const loadPage = () => {
     const deleteButton = document.querySelector("#deleteButton");
     const updateButton = document.querySelector("#updateButton");
 
+    const updateButtonCurisity = document.querySelector("#updateButtonCurisity");
+    const findButtonCurisity = document.querySelector("#findButtonCuriosity");
+
     //Events listenners
     storeButton.addEventListener('click', (e) => storeBox(e))
     findButton.addEventListener('click', (e) => findBox(e))
     deleteButton.addEventListener('click', (e) => deleteBox(e))
     updateButton.addEventListener('click', (e) => updateBox(e))
+
+    updateButtonCurisity.addEventListener('click', (e) => updateCuriosity(e));
+    findButtonCurisity.addEventListener('click', (e) => findCuriosity(e));
 
     /* is called when the admin clicks the add button function */
     // TODO: add snapshot
@@ -157,4 +163,62 @@ const loadPage = () => {
             window.alert("Erro ao atualizar evento, tente novamente mais tarde");
         }
     };
+
+
+    const findCuriosity = async (e) => {
+        e.preventDefault();
+        const search = document.querySelector("#searchCurisity").value;
+
+        try {
+            const q = query(
+                collection(db, 'curiosidade'),
+                where('titulo', '==', search)
+            );
+
+            const querySnapshot = await getDocs(q);
+
+            if (querySnapshot.empty) {
+                window.alert("Evento não encontrado");
+                return;
+            }
+
+            querySnapshot.forEach((doc) => {
+                const { titulo, texto } = doc.data();
+                document.querySelector("#textCuriosity").value = texto;
+                document.querySelector("#titleCuriosity").value = titulo;
+            });
+        } catch (err) {
+            window.alert("Erro ao encontrar evento, tente novamente mais tarde");
+        }
+    }
+    const updateCuriosity = async () => {
+        const textCuriosity = document.querySelector("#textCuriosity").value;
+        const titleCuriosity = document.querySelector("#titleCuriosity").value;
+        const search = document.querySelector("#searchCurisity").value;
+
+        try {
+            const q = query(
+                collection(db, 'curiosidade'),
+                where('titulo', '==', search)
+            );
+
+            const querySnapshot = await getDocs(q);
+
+            if (querySnapshot.empty) {
+                window.alert("Evento não encontrado");
+                return;
+            }
+
+            querySnapshot.forEach((doc) => {
+                updateDoc(doc.ref, {
+                    texto: textCuriosity,
+                    titulo: titleCuriosity
+                });
+            });
+
+            window.alert('Evento atualizado com sucesso!');
+        } catch (err) {
+            window.alert("Erro ao atualizar evento, tente novamente mais tarde");
+        }
+    }
 }

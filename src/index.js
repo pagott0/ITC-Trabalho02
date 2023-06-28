@@ -174,8 +174,35 @@ const handlePerson = () => {
     });
 };
 
+const sotreCuriosity = (titulo, texto, c) => {
+    const curiosityjs = document.querySelector(`.curiostiyjs-${c}`);
+    const html = `
+                <h1>${titulo}</h1>
+                <p>${texto}</p>
+                `
+
+    curiosityjs.innerHTML = html;
+}
+
+const handleCuriosity = () => {
+    let c = 0
+    try {
+        const q = query(collection(db, 'curiosidade'));
+        onSnapshot(q, (querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                const { texto, titulo } = doc.data();
+                c++
+                sotreCuriosity(titulo, texto, c);
+            });
+        });
+    } catch (err) {
+        console.log(err);
+    }
+}
+
 buttonListennier()
 handleVideo()
 getBoxes()
 handlePerson()
 handleOurVideo()
+handleCuriosity()
