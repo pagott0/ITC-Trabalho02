@@ -67,6 +67,8 @@ const loadPage = () => {
     const updateButtonCurisity = document.querySelector("#updateButtonCurisity");
     const findButtonCurisity = document.querySelector("#findButtonCuriosity");
 
+    const adminMailButton = document.querySelector("#adminMailButton");
+
     //Events listenners
     storeButton.addEventListener('click', (e) => storeBox(e))
     findButton.addEventListener('click', (e) => findBox(e))
@@ -75,6 +77,8 @@ const loadPage = () => {
 
     updateButtonCurisity.addEventListener('click', (e) => updateCuriosity(e));
     findButtonCurisity.addEventListener('click', (e) => findCuriosity(e));
+
+    adminMailButton.addEventListener('click', (e) => handleAdminMail(e));
 
     /* is called when the admin clicks the add button function */
     // TODO: add snapshot
@@ -239,6 +243,20 @@ const loadPage = () => {
             window.alert('Evento atualizado com sucesso!');
         } catch (err) {
             window.alert("Erro ao atualizar evento, tente novamente mais tarde");
+        }
+    }
+
+    const handleAdminMail = async (e) => {
+        e.preventDefault();
+        const adminMail = document.querySelector("#adminMail").value;
+
+        try {
+            await addDoc(collection(db, "users"), {
+                email: adminMail,
+            });
+            window.alert('Evento adicionado com sucesso!')
+        } catch (err) {
+            window.alert("Erro ao adicionar evento, tente novamente mais tarde");
         }
     }
 }
