@@ -7,10 +7,31 @@ import { auth, provider } from '../utils/firebaseConnection.js';
 import db from '../utils/firebaseConnection.js';
 
 
+const whiteList = []
+
+try {
+    const q = query(
+        collection(db, 'users'),
+    );
+
+    const querySnapshot = await getDocs(q);
+
+    if (querySnapshot.empty) {
+        window.alert("Emails não encontrado");
+    }
+
+    querySnapshot.forEach((doc) => {
+        const { email } = doc.data();
+        whiteList.push(email);
+    });
+} catch (err) {
+    window.alert("Erro ao encontrar evento, tente novamente mais tarde");
+}
+
 onAuthStateChanged(auth, (user) => {
     if (user) {
         // Usuário já está logado
-        if (user.email === "bruno.gvolpee@gmail.com") {
+        if (whiteList.includes(user.email)) {
             loadPage();
             localStorage.setItem("user", JSON.stringify(user));
         } else {
@@ -22,7 +43,7 @@ onAuthStateChanged(auth, (user) => {
             .then((result) => {
                 const user = result.user;
 
-                if (user.email === "bruno.gvolpee@gmail.com") {
+                if (whiteList.includes(user.email)) {
                     loadPage();
                     localStorage.setItem("user", JSON.stringify(user));
                 } else {
