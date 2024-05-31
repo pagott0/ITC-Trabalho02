@@ -2,7 +2,6 @@ import './style.css'
 import 'bootstrap';
 
 import video from '../src/assets/welcome.mp4';
-import james from '../src/assets/removeme.mp4'
 
 import db from './utils/firebaseConnection.js'
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore"
@@ -116,9 +115,7 @@ const handleVideo = () => {
 const handleOurVideo = () => {
     const videoContainer = document.querySelector('.video-nosso-container')
 
-    const html = `
-    <video src="${james}" autoplay controls></video>
-    `
+    const html = ``
 
     videoContainer.innerHTML = html
 }

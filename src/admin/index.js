@@ -6,8 +6,7 @@ import { collection, query, where, onSnapshot, addDoc, updateDoc, deleteDoc, get
 import { auth, provider } from '../utils/firebaseConnection.js';
 import db from '../utils/firebaseConnection.js';
 
-
-const whiteList = []
+const whiteList = [];
 
 try {
     const q = query(
@@ -25,6 +24,7 @@ try {
         whiteList.push(email);
     });
 } catch (err) {
+    console.log(err)
     window.alert("Erro ao encontrar evento, tente novamente mais tarde");
 }
 
