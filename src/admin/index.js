@@ -83,7 +83,6 @@ const loadPage = () => {
     /* is called when the admin clicks the add button function */
     // TODO: add snapshot
     const storeBox = async (e) => {
-        e.preventDefault();
         const text = document.querySelector("#text").value;
         const eventName = document.querySelector("#eventName").value;
         const eventYear = parseInt(document.querySelector("#eventYear").value);
@@ -101,7 +100,6 @@ const loadPage = () => {
     };
 
     const findBox = async (e) => {
-        e.preventDefault();
         const search = document.querySelector("#search").value;
 
         try {
@@ -129,7 +127,6 @@ const loadPage = () => {
     };
 
     const deleteBox = async (e) => {
-        e.preventDefault();
         const search = document.querySelector("#search").value;
 
         try {
@@ -155,7 +152,6 @@ const loadPage = () => {
     }
 
     const updateBox = async (e) => {
-        e.preventDefault();
         const textUpdate = document.querySelector("#textUpdate").value;
         const eventNameUpdate = document.querySelector("#eventNameUpdate").value;
         const eventYearUpdate = parseInt(document.querySelector("#eventYearUpdate").value);
@@ -190,7 +186,6 @@ const loadPage = () => {
 
 
     const findCuriosity = async (e) => {
-        e.preventDefault();
         const search = document.querySelector("#searchCurisity").value;
 
         try {
@@ -247,7 +242,6 @@ const loadPage = () => {
     }
 
     const handleAdminMail = async (e) => {
-        e.preventDefault();
         const adminMail = document.querySelector("#adminMail").value;
 
         try {
